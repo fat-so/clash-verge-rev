@@ -1,0 +1,30 @@
+{
+  "environment": "JSDOM; no visual layout validation",
+  "passed": 23,
+  "checks": [
+    "Overview renders",
+    "Bilingual product identity and accessible home label",
+    "Chinese and English wordmark",
+    "Connection state transition",
+    "Modal receives focus",
+    "Location search and selection",
+    "Modal focus restored",
+    "Empty search state",
+    "Favorite filtering",
+    "Rule modal receives focus",
+    "Add custom rule",
+    "Delete custom rule",
+    "Rule-type search",
+    "Switch subscription",
+    "Add subscription",
+    "Refresh local subscription",
+    "Preferences synchronized with overview",
+    "Open mobile navigation",
+    "Escape closes navigation",
+    "Guide modal receives focus",
+    "Dialog focus remains trapped",
+    "Escape dismisses dialog",
+    "Excluded disclaimers absent"
+  ],
+  "browserStatus": "Chromium sockets blocked; cloud browser cannot access local server"
+}
