@@ -19,7 +19,7 @@ import UnlockSvg from '@/assets/image/itemicon/unlock.svg?react'
 
 import { navigationItems } from './_navigation-meta'
 import ConnectionsPage from './connections'
-import HomePage from './home'
+import HomePage from './ark'
 import LogsPage from './logs'
 import ProfilePage from './profiles'
 import ProxyPage from './proxies'

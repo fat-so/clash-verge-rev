@@ -34,6 +34,8 @@
 <details>
 <summary><strong> ✨ 新增功能 </strong></summary>
 
+- 新增方舟 VPN 會員連線首頁，支援專屬配置派發、入口更新與斷線
+
 - 新增系统托盘代理组中的「测试延迟」菜单项
 
 </details>
