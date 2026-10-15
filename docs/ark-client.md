@@ -32,3 +32,11 @@ Default development API origin is `http://127.0.0.1:3100`. After a lost ACK resp
 Installed Mihomo Meta v1.19.31 accepts the VLESS xhttp template shape using configuration-test-only mode (`-t`); no proxy listener or speed probe was started. This validates syntax, not actual server connectivity.
 
 Browser visual QA was attempted through CUA Chrome, but Chrome was unavailable and browser/app inventory was empty. No rendered screenshot or browser interaction is claimed. The root desktop frontend still requires Tauri runtime for normal boot; web build success alone is not desktop validation.
+
+## Native library retry (2026-10-15)
+
+Approved execution outside the sandbox completed `cargo build --lib --locked -p clash-verge` in 3m 10s with Rust 1.99.0. TypeScript and production Vite build also passed again. The x64 debug app_lib.dll is 8,521,728 bytes (SHA256 976EF53D10B3938CBCB458704A1A79DC24E5A16D6DB23C0B571B1A052612CEB8). No source or lockfile changes were needed.
+
+The previous Schannel failure occurred during dependency download, before compilation or signing. The same crate URL fails to connect under CodexSandboxOffline and returns HTTP 200 under the approved abc11 context. This supports an execution-environment/network cause; the exact historical Schannel credential failure was not reproduced. TLS verification was not disabled.
+
+The resulting DLL exports only underlying aws-lc/deelevate symbols, not an application entry point. The installed executable does not import app_lib.dll; main.rs directly calls app_lib::run(). Therefore this artifact cannot be treated as a drop-in UI replacement. An independent unsigned executable build and runtime validation remain necessary. No installation, application launch, VPN change or signing was performed.
